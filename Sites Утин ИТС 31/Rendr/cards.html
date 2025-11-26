@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompressVision</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        .card {
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body style="background-color: #1a1a1a !important;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding-bottom: 0%; padding-top: 0%;">
+    <div class="container-fluid" style="background-color: #2c3e50">
+        <a class="navbar-brand" href="#" style="color:white">CompressVision</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="font-weight: bold;">
+            <a class="nav-link" aria-current="page" href="index.html" style="color: white;">Главная</a>
+            <a class="nav-link" href="about.html" style="color: white;">О проекте</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <!------------------------>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Карточка 1: H.265/HEVC -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.tvtok.ru/upload/medialibrary/9b5/9b5497ef5549e2c6f93630b23114bf11.jpg" class="card-img-top" alt="H.265/HEVC">
+                    <div class="card-body">
+                        <h5 class="card-title">H.265/HEVC</h5>
+                        <p class="card-text">
+                            High Efficiency Video Coding (HEVC) - современный стандарт сжатия видео, 
+                            который обеспечивает вдвое лучшее сжатие по сравнению с H.264 при том же качестве. 
+                            Использует улучшенные алгоритмы предсказания и кодирования, что особенно важно 
+                            для систем видеонаблюдения с камерами высокого разрешения (4K/8K).
+                        </p>
+                        <p><strong>Преимущества:</strong> Высокая эффективность сжатия, поддержка HDR, низкая задержка</p>
+                        <p><strong>Применение:</strong> Системы безопасности 4K, интеллектуальное видеонаблюдение</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2: H.264/AVC -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/H.264%2C_MPEG-4_AVC_logo.svg/1200px-H.264%2C_MPEG-4_AVC_logo.svg.png" class="card-img-top" alt="H.264/AVC">
+                    <div class="card-body">
+                        <h5 class="card-title">H.264/AVC</h5>
+                        <p class="card-text">
+                            Advanced Video Coding (AVC) - промышленный стандарт для систем видеонаблюдения. 
+                            Обеспечивает оптимальный баланс между качеством видео и объемом данных. 
+                            Широко поддерживается оборудованием и программным обеспечением, что делает его 
+                            наиболее распространенным форматом в современных системах безопасности.
+                        </p>
+                        <p><strong>Преимущества:</strong> Универсальность, низкие требования к ресурсам, широкоя поддержка</p>
+                        <p><strong>Применение:</strong> Традиционные системы видеонаблюдения, IP-камеры</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3: AV1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.stereo.ru/v3/news/2018/9/ea94bb960149e23cc78263f8731d3d3e.jpg" class="card-img-top" alt="AV1">
+                    <div class="card-body">
+                        <h5 class="card-title">AV1</h5>
+                        <p class="card-text">
+                            AV1 - открытый и бесплатный формат сжатия видео следующего поколения. 
+                            Разработан Alliance for Open Media как альтернатива проприетарным кодекам. 
+                            Обеспечивает на 30% лучшее сжатие по сравнению с HEVC. Особенно эффективен 
+                            для потоковой передачи видео через интернет в системах облачного видеонаблюдения.
+                        </p>
+                        <p><strong>Преимущества:</strong> Открытый стандарт, высокая эффективность, бесплатное использование</p>
+                        <p><strong>Применение:</strong> Облачное видеонаблюдение, IoT устройства, будущие системы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительные карточки -->
+        <div class="row mt-4">
+            <!-- Карточка 4: MJPEG -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://d1xyy3yiuu5xkq.cloudfront.net/wp-content/uploads/2021/02/09091128/Motion-JPEG_Codec-1.png" class="card-img-top" alt="MJPEG">
+                    <div class="card-body">
+                        <h5 class="card-title">MJPEG</h5>
+                        <p class="card-text">
+                            Motion JPEG - простой алгоритм сжатия, который кодирует каждый кадр видео 
+                            как отдельное JPEG-изображение. Хотя уступает по эффективности современным 
+                            стандартам, остается популярным благодаря простоте реализации и минимальной 
+                            задержке при кодировании/декодировании.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5: VP9 -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/UPBf40YLt74/maxresdefault.jpg" class="card-img-top" alt="VP9">
+                    <div class="card-body">
+                        <h5 class="card-title">VP9</h5>
+                        <p class="card-text">
+                            VP9 - открытый формат сжатия видео от Google, предшественник AV1. 
+                            Обеспечивает сравнимую с H.265 эффективность при использовании в веб-приложениях 
+                            и системах видеонаблюдения с ограниченными вычислительными ресурсами.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Мои задачи</h1>
+            <div class="date" id="date">
+                <!-- Дата будет вставлена через JavaScript -->
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="input-section">
+                <div class="input-container">
+                    <input type="text" class="task-input" id="task-input" placeholder="Что тебе нужно сделать?">
+                    <button class="add-btn" id="add-btn">+</button>
+                </div>
+            </div>
+            
+            <div class="filters" id="filters">
+                <div class="filter-btn active" data-filter="all">Все</div>
+                <div class="filter-btn" data-filter="active">Активные</div>
+                <div class="filter-btn" data-filter="completed">Завершенные</div>
+            </div>
+            
+            <ul class="tasks-list" id="tasks-list">
+                <!-- Задачи будут добавлены через JavaScript -->
+            </ul>
+
+            <div class="empty-state" id="empty-state">Задач пока нет</div>
+        </div>
+        
+        <div class="bottom-panel">
+            <div class="items-left" id="items-left">Всего задач: 0</div>
+            <button class="clear-completed" id="clear-completed">Очистить завершенные</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
